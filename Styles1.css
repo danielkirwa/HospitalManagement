@@ -1,0 +1,385 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	
+	background-size: cover;
+	opacity: 2;
+	
+	
+	font-family: sans-serif;
+
+}
+.menubar{
+	background: rgb(0,100,0);
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+.menubar ul{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+	
+}
+.menubar ul li{
+	width: 100%;
+	margin: 8px;
+	padding: 8px; 
+}
+.menubar ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+.active, .menubar ul li:hover{
+	background:#2bab0d;
+	border-radius: 3px;
+
+}
+.sub-menu{
+	display: none;
+}
+.menubar ul li:hover .sub-menu{
+	display: block;
+	position: absolute;
+	background: rgb(0,100,0);
+	margin-top: 15px;
+	margin-left: -15px;
+}
+.menubar ul li:hover .sub-menu ul{
+	display: block;
+	margin: 15px; 
+}
+.menubar ul li:hover .sub-menu ul li{
+	width: 180px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 5px;
+	text-align: left;
+}
+.menubar ul li:hover .sub-menu ul li:last-child{
+border-bottom: none;
+}
+.menubar ul li:hover .sub-menu ul li a:hover{
+	color: #b2ff00;
+}
+.sub-menu2{
+	display: none;
+}
+.hover-me:hover .sub-menu2{
+	position: absolute;
+	display: block;
+	margin-top: -40px;
+	margin-left: 140px;
+	background: rgb(0,100,0);
+}
+.sign-up{
+	background-color: #E8A8E8;
+	width: 60%;
+	border-radius: 10PX;
+	margin: 0 auto;
+	opacity: 0.5;
+
+
+}
+.divleft{
+	background-color: #90ee90;
+	width: 20%;
+	float: left;
+	height: 900px;
+	
+
+	
+
+}
+.divcenter{
+	background-color: #00fa9a;
+	width: 60%;
+	float: left;
+	height: 900px;
+	
+
+
+}
+.divright{
+	background-color: #98fb98;
+	width: 20%;
+	float: right;
+	height: 900px;
+
+}
+p{
+	color: sienna;
+}
+li{
+	color: blueviolet;
+}
+.form-popup{
+	display: none;
+	position: fixed;
+	border-radius: 10px;
+	top: 50%;
+	left:50%;
+	width: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 10px;
+	
+	z-index: 9;
+}
+.form-container{
+	max-width: 400px;
+	padding: 10px;
+	background-color: white;
+}
+.form-container input [type=text],.form-container input [type=password]{
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+}
+.form-container input [type=text]:focus, .form-container input [type=password]:focus:{
+	background: #ddd;
+	outline:none;
+}
+.form-container .btn{
+	background-color: #4caf50;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 10px;
+	opacity: 0.8;
+}
+.form-container .btncancel{
+	background-color:  #e74c3c;
+	width: 100%;
+	padding: 16px 20px;
+	cursor: pointer;
+}
+.form-container .btn :hover .open-button:hover{
+	opacity: 1;
+
+}
+.head{
+	background-color: white;
+	text-align: center;
+}
+.patient-details{
+	background-color:  #82e0aa ;
+	border-radius: 10px;
+	padding : 50px;
+	width: 800px;
+	margin: 0 auto;
+
+}
+.reception-infor{
+	background-color:  #fad7a0;
+	width: 90%;
+}
+.from-bookingcontainer{
+	max-width: 800px;
+	padding: 10px;
+	background-color: white;
+}
+.from-bookingcontainer .btnbooksubmit{
+background-color: #4caf50;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+.from-bookingcontainer .btnbookclose{
+background-color: #e74c3c;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+.from-bookingcontainer input [type=text]{
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+}
+.from-bookingscontainer{
+	max-width: 800px;
+	padding: 10px;
+	background-color: white;
+}
+.from-bookingscontainer input [type=text]{
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+}
+.from-bookingscontainer .btnbookdetailsclose{
+background-color: #e74c3c;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+.from-bookingscontainer .btnbookdetailssubmit{
+background-color: #4caf50;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+.from-medicationcontainer{
+	max-width: 800px;
+	padding: 10px;
+	background-color: white;
+}
+.from-medicationcontainer input [type=text]{
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+}
+.from-medicationcontainer .btnmedicationclose{
+background-color: #e74c3c;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+.from-medicationcontainer .btnmedicationview{
+background-color: #4caf50;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+.form-signupcontainer{
+	max-width: 800px;
+	padding: 10px;
+	background-color: white;
+}
+.form-signupcontainer input [type=text] .form-signupcontainer input [type=password] 
+.form-signupcontainer input [type=phone] .form-signupcontainer input [type=email]{
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+}
+.form-signupcontainer .btncancelsignup{
+background-color: #e74c3c;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+.form-signupcontainer .btnsignup{
+background-color: #4caf50;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+.submitcomments{
+	background-color: #4caf50;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: 80%;
+	padding: 10px; 
+}
+.btnreception{
+	background-color: #4caf50;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 30%;
+	padding: 7px;
+	margin-bottom: 10px;
+}
+.btnreceptionemergency{
+	background-color: crimson;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 30%;
+	padding: 7px;
+	margin-bottom: 10px;
+	border-radius: 20px;
+}
+.divprofileinfor{
+	float: left;
+	background-color: lavender;
+	width: 30%;
+	height: 100%;
+	margin-left: 10px;
+	height: 600px;
+}
+.divprofiledata{
+	background-color: palegreen;
+	border-radius: 20px;
+	width: 65%;
+	float: right;
+	height: 600px;
+	margin-right: 10px;
+
+}
+.divprofileinfor label{
+	margin-left: 12px;
+	border-radius: 20px;
+	margin-top: 15px;
+
+}
+.divprofileinfor label :hover i {
+	margin-left: 20px;
+	cursor: pointer;
+
+}
+#editprofile{
+	background-color: #29eff2;
+	color: #db371a;
+	width: 80%;
+	height: 30px;
+	opacity: 0.8;
+	margin-left: 20px;
+}
+ #editprofile:hover{
+	background-color:  #1a75ff;
+	opacity: 1;
+	cursor: pointer;
+}
+
+
+

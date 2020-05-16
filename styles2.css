@@ -1,0 +1,281 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.sidebar{
+	position: fixed;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background: steelblue;
+	transition: all .5s ease;
+	z-index: 10;
+}
+.sidebar header{
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	line-height: 70px;
+	background: slateblue;
+	user-select: none;
+}
+.sidebar ul a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 24px;
+	color: white;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom:1px solid black;
+}
+ul li:hover a{
+	padding-left: 50px;
+	background: slateblue;
+
+}  
+.sidebar ul i a{
+	margin-right: 16px;
+}
+#check{
+	display: none;
+}
+label #btn, label #cancel{
+	position: absolute;
+	cursor: pointer;
+
+} 
+label #btn{
+	left: 10px;
+	top: 5px;
+	transition: all .5s;
+	
+}
+label #cancel{
+	z-index: 1111;
+	left: -195px;
+	top: 40px;
+	transition: all .5s ease;
+
+
+}
+#check:checked ~ .sidebar{
+	left:0; 
+}
+#check:checked ~ label #btn{
+	left:250px;   
+	opacity: 0;
+	pointer-events: none;
+}
+#check:checked ~ label #cancel{
+	left: 220px;
+}
+#check:checked ~ section{
+	margin-left: 250px;
+}
+.active{
+	background-color: slateblue;
+}
+section{
+	background: cornsilk;
+	height: 900px;
+	transition: all .5s;
+}
+.controls{
+	text-align: center;
+	margin-top: 20px;
+}
+.clear{
+	padding: 15px 30px;
+	font-size: 10px;
+	cursor: pointer;
+	margin: 20px;
+
+}
+.admit{
+	padding: 15px 30px;
+	font-size: 10px;
+	cursor: pointer;
+	margin: 20px;
+
+}
+.careunit{
+	padding: 15px 30px;
+	font-size: 10px;
+	cursor: pointer;
+	margin: 20px;
+}
+.appointments{
+	padding: 15px 30px;
+	font-size: 10px;
+	cursor: pointer;
+	margin: 20px;
+}
+.complete{
+	padding: 15px 30px;
+	font-size: 10px;
+	cursor: pointer;
+	margin: 20px;
+}
+#viewpatient{
+	padding: 10px 30px;
+	font-size: 10px;
+	cursor: pointer;
+	margin: 20px;
+}
+.doctorpatient{
+	width: 50%;
+	float: left;
+	margin-left: 20px;
+	background: 
+}
+.doctorreport{
+	width: 40%;
+	float: right;
+}
+.clear:hover,.complete:hover,#viewpatient:hover,.appointments:hover,.admit:hover,.careunit:hover{
+	
+	background :#00e600;
+	transition: 0.8s;
+	height: 100%
+}
+#doctorXray{
+	display: none;
+	position: fixed;
+	border-radius: 10px;
+	top: 50%;
+	left:50%;
+	width: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 10px;
+	
+	z-index: 9;
+}
+.doctorXRay{
+	max-width: 800px;
+	padding: 10px;
+	background-color: white;
+	
+}
+
+#xRaycontainer{
+	max-width: 800px;
+	padding: 10px;
+	background-color: white;
+}
+#closexray{
+	background-color: #e74c3c;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+#submitxray{
+	background-color: #4caf50;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+
+#doctortherapy{
+	display: none;
+	position: fixed;
+	border-radius: 10px;
+	top: 50%;
+	left:50%;
+	width: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 10px;
+	
+	z-index: 9;
+}
+#doctorTHerapy{
+	max-width: 800px;
+	padding: 10px;
+	background-color: white;
+	
+}
+
+#Therapycontainer{
+	max-width: 800px;
+	padding: 10px;
+	background-color: white;
+}
+#closetherapy{
+	background-color: #e74c3c;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+#submittherapy{
+	background-color: #4caf50;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+
+
+#doctorct{
+	display: none;
+	position: fixed;
+	border-radius: 10px;
+	top: 50%;
+	left:50%;
+	width: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 10px;
+	
+	z-index: 9;
+}
+#doctorCT{
+	max-width: 800px;
+	padding: 10px;
+	background-color: white;
+	
+}
+
+#Ctcontainer{
+	max-width: 800px;
+	padding: 10px;
+	background-color: white;
+}
+#closect{
+	background-color: #e74c3c;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+#submitct{
+	background-color: #4caf50;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 45%;
+	margin-bottom: 10px;
+	opacity: 1;
+}
+
+

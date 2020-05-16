@@ -1,0 +1,85 @@
+
+.container{
+	width: 100%;
+	height: 1000px;
+
+}
+.menubar{
+	background-color: green;
+	width: 100%;
+	height: 80px;
+
+}
+.leftdiv{
+	background-color: teal;
+	width: 20%;
+	height: 800px;
+	float: left;
+}
+.maindiv{
+	width: 80%;
+	height: 800px;
+	background-color: cyan;
+
+	float: right;
+}
+.footer{
+	width: 100%;
+	height: 105px;
+	background-color: blue;
+	float: right;
+}
+.menubar ul{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+	float: right;
+	margin-top: 3px;
+
+	
+}
+.menubar ul li{
+	width: 100%;
+	margin: 8px;
+	padding: 8px; 
+}
+.menubar ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+.submenu{
+	display: none;
+}
+.menubar ul li:hover .submenu{
+	display: block;
+	position: absolute;
+	background: rgb(0,100,0);
+	
+	margin-left: -65px;
+}
+.menubar ul li:hover .submenu ul{
+	display: block;
+	margin: 15px; 
+}
+.menubar ul li:hover .submenu ul li{
+	width: 20px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 5px;
+	text-align: left;
+}
+.menubar ul li:hover .submenu ul li:last-child{
+border-bottom: none;
+}
+.menubar ul li:hover .submenu ul li a:hover{
+	color: #b2ff00;
+}
+#nursemenu{
+	width: 100%;
+	height: 50px;
+	background-color: blue;
+}
+#nursemenu:hover{
+	background-color: green;
+}
